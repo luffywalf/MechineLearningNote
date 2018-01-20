@@ -35,3 +35,28 @@ feature scaling & mean normalization 注意分母是max-min 大概是因为减�
 
 # this vedio
 对于其他算法可能不行 针对linear regression可以，在1000特征一下,ng更喜欢选择normal equation直接求解 不用GD的方法
+
+# this vedio
+对于classification often linear regression isnt a good idea,比如 极端负例使得整条直线的斜率变化很大
+logistic regression 就是套了一层sigmoid function的linear regression嘛
+how to choose theta automatically-------use cost function and GD
+logistic regression的cost function换了负的log那种的 具体课堂笔记里有
+https://www.coursera.org/learn/machine-learning/supplement/0hpMl/simplified-cost-function-and-gradient-descent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
