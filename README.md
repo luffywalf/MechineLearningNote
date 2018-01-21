@@ -43,6 +43,30 @@ how to choose theta automatically-------use cost function and GD
 logistic regression的cost function换了负的log那种的 具体课堂笔记里有
 https://www.coursera.org/learn/machine-learning/supplement/0hpMl/simplified-cost-function-and-gradient-descent
 
+advanced:"Conjugate gradient", "BFGS", and "L-BFGS" are more sophisticated, faster ways to optimize θ that can be used instead of gradient descent. 
+
+# this vedio: multiclass classification
+one-vs-all 比如要分k类 那就训练k个比如logistic的二分类器，也是one-vs-rest
+
+so我现在能想到的从linear->logistic的好处就是 它不再只能线性分类，而是通过表示成概率的形式，既增加了可分类线的形状，又使得预测值控制在0-1之间，好看
+
+So, with these visualizations, I hope that gives you a sense of what's the range of hypothesis functions we can represent using the representation that we have for logistic regression.
+所以圆什么的h of theta也是可以用在logistic上面，甚至更复杂的x1*x2也行
+hθ(x)=g(θTx)
+z=θTx
+g(z)=11+e−z
+有关z可以替换成复杂写的圆方程x平方，椭圆x1*x2
+
+# this vedio: overfitting
+regularization
+minθ 12m ∑mi=1(hθ(x(i))−y(i))2+λ ∑nj=1θ2j
+因为如果不知道该取舍哪个θ 所以干脆都放上 其中的λ系数可以控制还是以前面fit data为主
+比如 minθ 12m∑mi=1(hθ(x(i))−y(i))2+1000⋅θ23+1000⋅θ24这种情况下 在min整体时 因为θ前的1000很大，so θ就会变得很小啦
+
+
+
+
+
 
 
 
